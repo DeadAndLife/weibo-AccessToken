@@ -41,7 +41,7 @@ static NSString *footerIdentifier = @"statusFooter";
 -(void)requestHomeList{
   //GET请求方法
   //1合并URL
-    NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"%@?access_token=%@",[BASEURL stringByAppendingPathComponent:GETHOMELISTPATH],[QYAccessToken shareHandel].access_token]];
+    NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"%@?access_token=%@&page=1",[BASEURL stringByAppendingPathComponent:GETHOMELISTPATH],[QYAccessToken shareHandel].access_token]];
   //2.请求数据
     __weak QYHomeVC *home=self;
     NSURLSession *seession=[NSURLSession sharedSession];

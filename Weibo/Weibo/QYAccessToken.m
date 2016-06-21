@@ -66,7 +66,6 @@ static  NSString *Kexpiresin=@"expires_in";
 //1.获取沙盒目录
     NSString *documentsPath=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
  //2.合并路径
-    
     return [documentsPath stringByAppendingPathComponent:@"AccessToken"];
 
 }

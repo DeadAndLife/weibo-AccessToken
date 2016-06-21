@@ -1,0 +1,5 @@
+platform :ios, '8.0'
+target 'weibo' do
+pod 'SVProgressHUD'
+pod 'AFNetworking'
+end
